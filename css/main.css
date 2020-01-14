@@ -14,8 +14,9 @@ html {
 
 .header {
     text-align: center;
-    letter-spacing: 0px;
-    font-size: 10rem;
+    letter-spacing: -1rem;
+    font-size: 8rem;
+    font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
     user-select: none;
     margin-top: 8rem;
@@ -52,10 +53,18 @@ html {
     margin: 2rem auto;
     display: block;
     border-radius: 10rem;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
     width: 50rem;
     height: 4.4rem;
     position: inherit;
-    outline: 0;  
+    outline: 0; 
+    transition: all ease-in .3s; 
+}
+
+.box:hover {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0)
 }
 
 .icons {
@@ -72,6 +81,7 @@ html {
     padding: .1rem;
     transition: ease-in-out 106ms;
     cursor: pointer;
+    object-fit: cover;
 }
 
 .container {
